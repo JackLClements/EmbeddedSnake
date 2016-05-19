@@ -1,0 +1,13 @@
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\RTE_Driver\I2C_STM32F10x.c
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS_RTX\INC\cmsis_os.h
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include\STM32F10x.h
+.\i2c_stm32f10x.o: \\ueahome4\stusci4\dha13jyu\data\NTProfile\Desktop\SnakeProject\RTE\RTE_Components.h
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include\core_cm3.h
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include\core_cmInstr.h
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include\core_cmFunc.h
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include\system_stm32f10x.h
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\RTE_Driver\GPIO_STM32F10x.h
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\RTE_Driver\DMA_STM32F10x.h
