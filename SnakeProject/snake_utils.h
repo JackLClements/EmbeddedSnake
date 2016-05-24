@@ -7,8 +7,11 @@
 void setupGame(void);
 void updateSnakeHead(void);
 void updateSnakeBody(void);
-void drawNewApple(void);
+void newApple(void);
 void updateScore(void);
 void checkCollision(void);
-
+void drawHead(void);
+void drawBody(void);
+void eraseHead(void);
+void eraseBody(void);
 #endif

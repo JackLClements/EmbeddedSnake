@@ -13,7 +13,7 @@ typedef struct{
 typedef struct{
 	int x;
 	int y;
-	TailSegment *next;
+	struct TailSegment *next;
 } TailSegment;
 
 typedef struct{
