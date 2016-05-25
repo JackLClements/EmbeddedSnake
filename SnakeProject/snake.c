@@ -1,6 +1,14 @@
 #include "snake.h"
+#include "GLCD.h"
+#include "stdint.h"
+#include "stddef.h"
+#include "stm32f10x_cl.h"
+#include "core_cm3.h"
+#include "system_stm32f10x_cl.h"
+#include "cmsis_os.h"
+#include "RTX_CM_lib.h"
 
-void createSnake(Struct Snake *snake) {
+void createSnake(Snake *snake) {
 	snake->x = 5;
 	snake->y = 5;
 	snake->direction = 1;
@@ -45,11 +53,10 @@ void score(void const *argument) {
 /*Main - initialise, start RTX kernel and play game */
 int main(void) {
 	SystemCoreClockUpdate();
-	GLCD_setup();
 	GLCD_Initialize();
-	GLCD_SetBackgroundColor(GLCD_COLOR_BLACK);
-	GLCD_ClearScreen();
-	GLCD_SetForegroundColor(GLCD_COLOR_WHITE);
+	GLCD_SetBackColor(Black);
+	GLCD_Clear(Black);
+	GLCD_SetTextColor(White);
 	
 	mut_GLCD = ofMutexCreate(osMutex(mut_GLCD));
 

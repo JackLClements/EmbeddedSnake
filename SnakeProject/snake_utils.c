@@ -1,5 +1,5 @@
 #include "snake_utils.h"
-#include "snake.c"
+#include "snake.h"
 #include "ADC.h"
 #include "GLCD.h"
 #include "stdio.h"

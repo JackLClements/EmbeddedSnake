@@ -1,11 +1,16 @@
 .\joystick.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Boards\Keil\MCBSTM32C\Common\Joystick.c
 .\joystick.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include\stm32f10x.h
-.\joystick.o: \\ueahome4\stusci4\dha13jyu\data\NTProfile\Desktop\SnakeProject\RTE\RTE_Components.h
+.\joystick.o: C:\Temp\EmbeddedSnake\SnakeProject\RTE\RTE_Components.h
 .\joystick.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include\core_cm3.h
 .\joystick.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
 .\joystick.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include\core_cmInstr.h
 .\joystick.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include\core_cmFunc.h
 .\joystick.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include\system_stm32f10x.h
+.\joystick.o: C:\Temp\EmbeddedSnake\SnakeProject\RTE\Device\STM32F107VC\stm32f10x_conf.h
+.\joystick.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_adc.h
+.\joystick.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include\stm32f10x.h
+.\joystick.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\joystick.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h
 .\joystick.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Boards\Keil\MCBSTM32C\Common\Joystick.h
 .\joystick.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\RTE_Driver\GPIO_STM32F10x.h
 .\joystick.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h

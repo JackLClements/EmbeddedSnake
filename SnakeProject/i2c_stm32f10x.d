@@ -3,11 +3,16 @@
 .\i2c_stm32f10x.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
 .\i2c_stm32f10x.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
 .\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include\STM32F10x.h
-.\i2c_stm32f10x.o: \\ueahome4\stusci4\dha13jyu\data\NTProfile\Desktop\SnakeProject\RTE\RTE_Components.h
+.\i2c_stm32f10x.o: C:\Temp\EmbeddedSnake\SnakeProject\RTE\RTE_Components.h
 .\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include\core_cm3.h
 .\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include\core_cmInstr.h
 .\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include\core_cmFunc.h
 .\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include\system_stm32f10x.h
+.\i2c_stm32f10x.o: C:\Temp\EmbeddedSnake\SnakeProject\RTE\Device\STM32F107VC\stm32f10x_conf.h
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_adc.h
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include\stm32f10x.h
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\misc.h
 .\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\RTE_Driver\GPIO_STM32F10x.h
 .\i2c_stm32f10x.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
 .\i2c_stm32f10x.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\RTE_Driver\DMA_STM32F10x.h
