@@ -3,16 +3,69 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-\\ueahome4\stusci4\dha13jyu\data\NTProfile\Desktop\SnakeProject\SnakeProject.uvproj
+C:\Temp\EmbeddedSnake\SnakeProject\SnakeProject.uvprojx
 Project File Date:  05/19/2016
 
 <h2>Output:</h2>
-Rebuild target 'Target 1'
+Build target 'Target 1'
 compiling snake_utils.c...
+snake_utils.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+snake.h(49): warning:  #1-D: last line of file ends without a newline
+  #endif
+snake_utils.c(25): error:  #20: identifier "MAX_X" is undefined
+        if(newX > MAX_X){
+snake_utils.c(28): error:  #20: identifier "MAX_Y" is undefined
+        if(newY > MAX_Y){
+snake_utils.c(31): error:  #20: identifier "apple1" is undefined
+        apple1.x = newX;
+snake_utils.c(37): error:  #20: identifier "apple1" is undefined
+        GLCD_DrawChar(apple1.x, apple1.y, ' ');
+snake_utils.c(37): error:  #165: too few arguments in function call
+        GLCD_DrawChar(apple1.x, apple1.y, ' ');
+snake_utils.c(41): warning:  #223-D: function "GLCD_DrawBitmap" declared implicitly
+        GLCD_DrawBitmap ( thisGame.ball.x, thisGame.ball.y, gimp_image.width,gimp_image.height, gimp_image.pixel_data);
+snake_utils.c(41): error:  #20: identifier "thisGame" is undefined
+        GLCD_DrawBitmap ( thisGame.ball.x, thisGame.ball.y, gimp_image.width,gimp_image.height, gimp_image.pixel_data);
+snake_utils.c(41): error:  #20: identifier "gimp_image" is undefined
+        GLCD_DrawBitmap ( thisGame.ball.x, thisGame.ball.y, gimp_image.width,gimp_image.height, gimp_image.pixel_data);
+snake_utils.c(68): error:  #18: expected a ")"
+        if ((Snake.snake.x<0) || Snake.snake.y<0 || Snake.snake.x>MAX_X || Snake.snake.y>MAX_Y){
+snake_utils.c(68): error:  #119: cast to type "Snake" is not allowed
+        if ((Snake.snake.x<0) || Snake.snake.y<0 || Snake.snake.x>MAX_X || Snake.snake.y>MAX_Y){
+snake_utils.c(68): error:  #29: expected an expression
+        if ((Snake.snake.x<0) || Snake.snake.y<0 || Snake.snake.x>MAX_X || Snake.snake.y>MAX_Y){
+snake_utils.c(75): error:  #18: expected a ")"
+        if((Snake.snake.x == Apple.apple.x) + (Snake.snake.y == Apple.apple.y)){
+snake_utils.c(75): error:  #119: cast to type "Snake" is not allowed
+        if((Snake.snake.x == Apple.apple.x) + (Snake.snake.y == Apple.apple.y)){
+snake_utils.c(75): error:  #18: expected a ")"
+        if((Snake.snake.x == Apple.apple.x) + (Snake.snake.y == Apple.apple.y)){
+snake_utils.c(75): error:  #119: cast to type "Snake" is not allowed
+        if((Snake.snake.x == Apple.apple.x) + (Snake.snake.y == Apple.apple.y)){
+snake_utils.c(75): error:  #29: expected an expression
+        if((Snake.snake.x == Apple.apple.x) + (Snake.snake.y == Apple.apple.y)){
+snake_utils.c(78): warning:  #223-D: function "drawNewApple" declared implicitly
+                drawNewApple();
+snake_utils.c: 4 warnings, 15 errors
 compiling snake.c...
-snake.c(3): warning:  #1-D: last line of file ends without a newline
-  #include "stdio.h"
-snake.c: 1 warning, 0 errors
+snake.h(49): warning:  #1-D: last line of file ends without a newline
+  #endif
+C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS_RTX\INC\RTX_CM_lib.h(87): error:  #35: #error directive: "Invalid number of concurrent running threads!"
+  #error "Invalid number of concurrent running threads!"
+snake.c: 1 warning, 1 error
+compiling body.c...
+body.c(8): warning:  #177-D: variable "gimp_image3" was declared but never referenced
+  } gimp_image3 = {
+body.c: 1 warning, 0 errors
+compiling ball.c...
+ball.c(8): warning:  #177-D: variable "gimp_image" was declared but never referenced
+  } gimp_image = {
+ball.c: 1 warning, 0 errors
+compiling head.c...
+head.c(8): warning:  #177-D: variable "gimp_image2" was declared but never referenced
+  } gimp_image2 = {
+head.c: 1 warning, 0 errors
 compiling ADC.c...
 compiling GLCD_SPI_STM32F10x.c...
 compiling Joystick.c...
@@ -30,6 +83,9 @@ compiling DMA_STM32F10x.c...
 compiling GPIO_STM32F10x.c...
 assembling startup_stm32f10x_cl.s...
 compiling system_stm32f10x.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_rcc.c...
 compiling I2C_STM32F10x.c...
 C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\RTE_Driver\I2C_STM32F10x.c(34): error:  #5: cannot open source input file "Driver_I2C.h": No such file or directory
   #include "Driver_I2C.h"
@@ -38,7 +94,7 @@ compiling SPI_STM32F10x.c...
 C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\RTE_Driver\SPI_STM32F10x.c(39): error:  #5: cannot open source input file "Driver_SPI.h": No such file or directory
   #include "Driver_SPI.h"
 C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\RTE_Driver\SPI_STM32F10x.c: 0 warnings, 1 error
-".\SnakeProject.axf" - 4 Error(s), 1 Warning(s).
+".\SnakeProject.axf" - 20 Error(s), 8 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -55,6 +111,9 @@ Package Vendor: Keil
                 Keil::Device:Startup:1.0.0
                 STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
    * Component: Startup Version: 1.0.0
+   * Component: Framework Version: 3.5.1
+   * Component: ADC Version: 3.5.0
+   * Component: RCC Version: 3.5.0
    * Component: GPIO Version: 1.01.0
    * Component: DMA Version: 1.01.0
    * Component: SPI Version: 1.03.0
@@ -67,12 +126,13 @@ Package Vendor: Keil
    * Component: Touchscreen Version: 1.0.0
 
 <h2>Collection of Component include folders:</h2>
-  \\ueahome4\stusci4\dha13jyu\data\NTProfile\Desktop\SnakeProject\RTE
-  \\ueahome4\stusci4\dha13jyu\data\NTProfile\Desktop\SnakeProject\RTE\Device\STM32F107VC
+  C:\Temp\EmbeddedSnake\SnakeProject\RTE
+  C:\Temp\EmbeddedSnake\SnakeProject\RTE\Device\STM32F107VC
   C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
   C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS_RTX\INC
   C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Boards\Keil\MCBSTM32C\Common
   C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc
   C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\RTE_Driver
 
 <h2>Collection of Component Files used:</h2>
@@ -101,6 +161,20 @@ Package Vendor: Keil
       Source file:   Device\Source\ARM\startup_stm32f10x_cl.s
       Source file:   Device\Source\system_stm32f10x.c
       Include file:  RTE_Driver\Config\RTE_Device.h
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.5.1
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+
+   * Component: Keil::Device:StdPeriph Drivers:ADC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_adc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_adc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
 
    * Component: Keil::Device:GPIO:1.01.0
       Include file:  RTE_Driver\GPIO_STM32F10x.h
@@ -144,3 +218,130 @@ Target not created
 </pre>
 </body>
 </html>
+c.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+
+   * Component: Keil::Device:StdPeriph Drivers:ADC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_adc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_adc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+
+   * Component: Keil::Device:GPIO:1.01.0
+      Include file:  RTE_Driver\GPIO_STM32F10x.h
+      Source file:   RTE_Driver\GPIO_STM32F10x.c
+
+   * Component: Keil::Device:DMA:1.01.0
+      Include file:  RTE_Driver\DMA_STM32F10x.h
+      Source file:   RTE_Driver\DMA_STM32F10x.c
+
+   * Component: Keil::Drivers:SPI:1.03.0
+      Source file:   RTE_Driver\SPI_STM32F10x.c
+
+   * Component: Keil::Drivers:I2C:1.01.0
+      Source file:   RTE_Driver\I2C_STM32F10x.c
+
+   * Component: Keil.MCBSTM32C::Board Support:MCBSTM32C:A/D Converter:1.0.0
+      Include file:  Boards\Keil\MCBSTM32C\Common\ADC.h
+      Source file:   Boards\Keil\MCBSTM32C\Common\ADC.c
+
+   * Component: Keil.MCBSTM32C::Board Support:MCBSTM32C:Graphic LCD:1.0.0
+      Include file:  Boards\Keil\MCBSTM32C\Common\Font_6x8_h.h
+      Include file:  Boards\Keil\MCBSTM32C\Common\Font_16x24_h.h
+      Include file:  Boards\Keil\MCBSTM32C\Common\GLCD.h
+      Source file:   Boards\Keil\MCBSTM32C\Common\GLCD_SPI_STM32F10x.c
+
+   * Component: Keil.MCBSTM32C::Board Support:MCBSTM32C:emWin LCD:SPI IF:1.0.0
+      Source file:   Boards\Keil\MCBSTM32C\Common\LCD_X_SPI_STM32F10x.c
+
+   * Component: Keil.MCBSTM32C::Board Support:MCBSTM32C:Joystick:1.0.0
+      Include file:  Boards\Keil\MCBSTM32C\Common\Joystick.h
+      Source file:   Boards\Keil\MCBSTM32C\Common\Joystick.c
+
+   * Component: Keil.MCBSTM32C::Board Support:MCBSTM32C:LED:1.0.0
+      Include file:  Boards\Keil\MCBSTM32C\Common\LED.h
+      Source file:   Boards\Keil\MCBSTM32C\Common\LED.c
+
+   * Component: Keil.MCBSTM32C::Board Support:MCBSTM32C:Touchscreen:1.0.0
+      Include file:  Boards\Keil\MCBSTM32C\Common\Touch.h
+      Source file:   Boards\Keil\MCBSTM32C\Common\Touch_STMPE811.c
+Target not created
+Clean started: Project: 'SnakeProject'
+   deleting intermediate output files for target 'Target 1'
+STMPE811.c
+Target not created
+Clean started: Project: 'SnakeProject'
+   deleting intermediate output files for target 'Target 1'
+\Common\Joystick.c
+
+   * Component: Keil.MCBSTM32C::Board Support:MCBSTM32C:LED:1.0.0
+      Include file:  Boards\Keil\MCBSTM32C\Common\LED.h
+      Source file:   Boards\Keil\MCBSTM32C\Common\LED.c
+
+   * Component: Keil.MCBSTM32C::Board Support:MCBSTM32C:Touchscreen:1.0.0
+      Include file:  Boards\Keil\MCBSTM32C\Common\Touch.h
+      Source file:   Boards\Keil\MCBSTM32C\Common\Touch_STMPE811.c
+Target not created
+Clean started: Project: 'SnakeProject'
+   deleting intermediate output files for target 'Target 1'
+ean started: Project: 'SnakeProject'
+   deleting intermediate output files for target 'Target 1'
+:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_adc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_adc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+
+   * Component: Keil::Device:GPIO:1.01.0
+      Include file:  RTE_Driver\GPIO_STM32F10x.h
+      Source file:   RTE_Driver\GPIO_STM32F10x.c
+
+   * Component: Keil::Device:DMA:1.01.0
+      Include file:  RTE_Driver\DMA_STM32F10x.h
+      Source file:   RTE_Driver\DMA_STM32F10x.c
+
+   * Component: Keil::Drivers:SPI:1.03.0
+      Source file:   RTE_Driver\SPI_STM32F10x.c
+
+   * Component: Keil::Drivers:I2C:1.01.0
+      Source file:   RTE_Driver\I2C_STM32F10x.c
+
+   * Component: Keil.MCBSTM32C::Board Support:MCBSTM32C:A/D Converter:1.0.0
+      Include file:  Boards\Keil\MCBSTM32C\Common\ADC.h
+      Source file:   Boards\Keil\MCBSTM32C\Common\ADC.c
+
+   * Component: Keil.MCBSTM32C::Board Support:MCBSTM32C:Graphic LCD:1.0.0
+      Include file:  Boards\Keil\MCBSTM32C\Common\Font_6x8_h.h
+      Include file:  Boards\Keil\MCBSTM32C\Common\Font_16x24_h.h
+      Include file:  Boards\Keil\MCBSTM32C\Common\GLCD.h
+      Source file:   Boards\Keil\MCBSTM32C\Common\GLCD_SPI_STM32F10x.c
+
+   * Component: Keil.MCBSTM32C::Board Support:MCBSTM32C:emWin LCD:SPI IF:1.0.0
+      Source file:   Boards\Keil\MCBSTM32C\Common\LCD_X_SPI_STM32F10x.c
+
+   * Component: Keil.MCBSTM32C::Board Support:MCBSTM32C:Joystick:1.0.0
+      Include file:  Boards\Keil\MCBSTM32C\Common\Joystick.h
+      Source file:   Boards\Keil\MCBSTM32C\Common\Joystick.c
+
+   * Component: Keil.MCBSTM32C::Board Support:MCBSTM32C:LED:1.0.0
+      Include file:  Boards\Keil\MCBSTM32C\Common\LED.h
+      Source file:   Boards\Keil\MCBSTM32C\Common\LED.c
+
+   * Component: Keil.MCBSTM32C::Board Support:MCBSTM32C:Touchscreen:1.0.0
+      Include file:  Boards\Keil\MCBSTM32C\Common\Touch.h
+      Source file:   Boards\Keil\MCBSTM32C\Common\Touch_STMPE811.c
+Target not created
+Clean started: Project: 'SnakeProject'
+   deleting intermediate output files for target 'Target 1'
+Clean started: Project: 'SnakeProject'
+   deleting intermediate output files for target 'Target 1'
+Clean started: Project: 'SnakeProject'
+   deleting intermediate output files for target 'Target 1'
+Clean started: Project: 'SnakeProject'
+   deleting intermediate output files for target 'Target 1'

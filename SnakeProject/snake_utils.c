@@ -1,5 +1,5 @@
 #include "snake_utils.h"
-#include "snake.c"
+#include "snake.h"
 #include "ADC.h"
 #include "GLCD.h"
 #include "stdio.h"
@@ -18,7 +18,7 @@ void updateSnakeBody(){
 	
 }
 
-void drawNewApple(){
+void newApple(){
 	int newX, newY;
 	newX = rand();
 	newY = rand();
@@ -28,7 +28,33 @@ void drawNewApple(){
 	if(newY > MAX_Y){
 		newY = newY - MAX_Y;
 	}
+	apple1.x = newX;
+	apple1.y = newY;
 	//create new apple with these coordinates
+}
+
+void eraseApple(){
+	GLCD_DrawChar(apple1.x, apple1.y, ' ');
+}
+
+void drawApple(){
+	GLCD_DrawBitmap ( thisGame.ball.x, thisGame.ball.y, gimp_image.width,gimp_image.height, gimp_image.pixel_data);
+}
+
+void drawHead(){
+	
+}
+
+void drawBody(){
+	
+}
+
+void eraseHead(){
+	
+}
+
+void eraseBody(){
+	
 }
 
 void updateScore(){
@@ -51,6 +77,6 @@ void checkCollision(){
 		updateScore();
 		drawNewApple();
 	}
-	//http://www.c4learn.com/data-structure/traversing-through-singly-linked-list/
+	
 }
 
